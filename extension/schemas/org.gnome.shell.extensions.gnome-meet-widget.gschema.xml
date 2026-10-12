@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-meet-widget">
+  <enum id="org.gnome.shell.extensions.gnome-meet-widget.PanelMode">
+    <value nick="smart" value="0"/>
+    <value nick="countdown" value="1"/>
+    <value nick="status" value="2"/>
+  </enum>
+  <enum id="org.gnome.shell.extensions.gnome-meet-widget.PanelPosition">
+    <value nick="left" value="0"/>
+    <value nick="center" value="1"/>
+    <value nick="right" value="2"/>
+  </enum>
+  <schema id="org.gnome.shell.extensions.gnome-meet-widget"
+          path="/org/gnome/shell/extensions/gnome-meet-widget/">
+    <key name="refresh-interval" type="u">
+      <range min="1" max="60"/>
+      <default>5</default>
+      <summary>Refresh interval, minutes</summary>
+    </key>
+    <key name="reminder-minutes" type="u">
+      <range min="0" max="30"/>
+      <default>2</default>
+      <summary>Remind this many minutes before a meeting (0 disables reminders)</summary>
+    </key>
+    <key name="highlight-minutes" type="u">
+      <range min="0" max="30"/>
+      <default>5</default>
+      <summary>Highlight the top bar button this many minutes before a meeting</summary>
+    </key>
+    <key name="panel-horizon-hours" type="u">
+      <range min="1" max="24"/>
+      <default>3</default>
+      <summary>Show upcoming meetings in the top bar this many hours ahead</summary>
+    </key>
+    <key name="show-title" type="b">
+      <default>true</default>
+      <summary>Show the meeting title in the top bar</summary>
+    </key>
+    <key name="panel-mode" enum="org.gnome.shell.extensions.gnome-meet-widget.PanelMode">
+      <default>'smart'</default>
+      <summary>What the top bar shows: smart, countdown or status</summary>
+    </key>
+    <key name="panel-position" enum="org.gnome.shell.extensions.gnome-meet-widget.PanelPosition">
+      <default>'right'</default>
+      <summary>Where the button sits in the top bar: left, center or right</summary>
+    </key>
+    <key name="show-invitations" type="b">
+      <default>true</default>
+      <summary>Show the number of invitations awaiting a reply in the top bar</summary>
+    </key>
+    <key name="pulse" type="b">
+      <default>true</default>
+      <summary>Pulse the top bar button when it is time to join</summary>
+    </key>
+    <key name="join-shortcut" type="as">
+      <default><![CDATA[['<Control><Alt>j']]]></default>
+      <summary>Join the current meeting</summary>
+    </key>
+    <key name="join-shortcut-enabled" type="b">
+      <default>true</default>
+      <summary>Join the current meeting with the keyboard shortcut</summary>
+    </key>
+    <key name="calendar-visibility" type="a{sb}">
+      <default>{}</default>
+      <summary>Per-calendar visibility overrides</summary>
+      <description>Calendar id to visible flag. Calendars missing here follow their visibility in Google Calendar; birthdays and holidays are hidden.</description>
+    </key>
+  </schema>
+</schemalist>

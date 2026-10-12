@@ -1,0 +1,149 @@
+{
+  "_comment": "Synthetic data shaped like real Google Calendar API v3 responses. No real people, rooms or links. 'Now' in tests is 2026-10-12 (Monday), Europe/Moscow.",
+  "account": {"id": "account_1", "email": "alex@example.com"},
+  "calendars": [
+    {"id": "alex@example.com", "summary": "alex@example.com", "primary": true, "selected": true, "accessRole": "owner", "backgroundColor": "#9fe1e7"},
+    {"id": "copy1@group.calendar.google.com", "summary": "Work (copy)", "selected": true, "accessRole": "owner", "backgroundColor": "#f83a22"},
+    {"id": "copy2@group.calendar.google.com", "summary": "Mail import", "selected": true, "accessRole": "owner", "backgroundColor": "#16a765"},
+    {"id": "hidden@group.calendar.google.com", "summary": "Hidden in Google", "accessRole": "owner", "backgroundColor": "#cccccc"},
+    {"id": "addressbook#contacts@group.v.calendar.google.com", "summary": "Birthdays", "selected": true, "accessRole": "reader", "backgroundColor": "#92e1c0"},
+    {"id": "ru.russian#holiday@group.v.calendar.google.com", "summary": "Holidays in Russia", "selected": true, "accessRole": "reader", "backgroundColor": "#16a765"}
+  ],
+  "events": {
+    "alex@example.com": [
+      {
+        "id": "invite1", "etag": "\"3001\"", "status": "confirmed", "iCalUID": "invite1@google.com",
+        "summary": "Architecture review",
+        "start": {"dateTime": "2026-10-12T11:00:00+03:00", "timeZone": "Europe/Moscow"},
+        "end": {"dateTime": "2026-10-12T12:00:00+03:00", "timeZone": "Europe/Moscow"},
+        "organizer": {"email": "lead@example.org", "displayName": "Team Lead"},
+        "attendees": [
+          {"email": "lead@example.org", "displayName": "Team Lead", "organizer": true, "responseStatus": "accepted"},
+          {"email": "alex@example.com", "self": true, "responseStatus": "needsAction"},
+          {"email": "dev1@example.org", "responseStatus": "accepted"},
+          {"email": "dev2@example.org", "displayName": "Dev Two", "optional": true, "responseStatus": "tentative"},
+          {"email": "dev3@example.org", "responseStatus": "declined"}
+        ],
+        "conferenceData": {
+          "entryPoints": [
+            {"entryPointType": "phone", "uri": "tel:+1-555-0100"},
+            {"entryPointType": "video", "uri": "https://meet.google.com/abc-defg-hij"}
+          ],
+          "conferenceSolution": {"key": {"type": "hangoutsMeet"}}
+        },
+        "hangoutLink": "https://meet.google.com/abc-defg-hij",
+        "description": "Join via Zoom if Meet fails: https://us06web.zoom.us/j/999",
+        "htmlLink": "https://www.google.com/calendar/event?eid=aW52aXRlMQ",
+        "eventType": "default"
+      },
+      {
+        "id": "weekly_20261012T090000Z", "recurringEventId": "weekly", "etag": "\"3002\"", "status": "confirmed", "iCalUID": "weekly@google.com",
+        "summary": "Weekly sync",
+        "start": {"dateTime": "2026-10-12T12:00:00+03:00"},
+        "end": {"dateTime": "2026-10-12T12:30:00+03:00"},
+        "originalStartTime": {"dateTime": "2026-10-12T12:00:00+03:00"},
+        "organizer": {"email": "lead@example.org"},
+        "attendees": [
+          {"email": "lead@example.org", "organizer": true, "responseStatus": "accepted"},
+          {"email": "alex@example.com", "self": true, "responseStatus": "accepted"}
+        ],
+        "location": "https://team.ktalk.ru/weekly",
+        "htmlLink": "https://www.google.com/calendar/event?eid=d2Vla2x5",
+        "eventType": "default"
+      },
+      {
+        "id": "weekly_20261019T090000Z", "recurringEventId": "weekly", "status": "cancelled",
+        "start": {"dateTime": "2026-10-19T12:00:00+03:00"},
+        "end": {"dateTime": "2026-10-19T12:30:00+03:00"}
+      },
+      {
+        "id": "declined1", "etag": "\"3003\"", "status": "confirmed", "iCalUID": "declined1@google.com",
+        "summary": "Optional demo",
+        "start": {"dateTime": "2026-10-12T15:00:00+03:00"},
+        "end": {"dateTime": "2026-10-12T15:30:00+03:00"},
+        "organizer": {"email": "pm@example.org"},
+        "attendees": [
+          {"email": "pm@example.org", "organizer": true, "responseStatus": "accepted"},
+          {"email": "alex@example.com", "self": true, "responseStatus": "declined"}
+        ],
+        "location": "https://telemost.yandex.ru/j/12345",
+        "eventType": "default"
+      },
+      {
+        "id": "own1", "etag": "\"3004\"", "status": "confirmed", "iCalUID": "own1@google.com",
+        "summary": "Planning with the team",
+        "start": {"dateTime": "2026-10-12T16:00:00+03:00"},
+        "end": {"dateTime": "2026-10-12T17:00:00+03:00"},
+        "organizer": {"email": "alex@example.com", "self": true},
+        "attendees": [
+          {"email": "alex@example.com", "self": true, "organizer": true, "responseStatus": "accepted"},
+          {"email": "dev1@example.org", "responseStatus": "needsAction"}
+        ],
+        "location": "Room 3",
+        "eventType": "default"
+      },
+      {
+        "id": "bday1", "status": "confirmed", "iCalUID": "bday1@google.com",
+        "summary": "Someone's birthday",
+        "start": {"date": "2026-10-12"}, "end": {"date": "2026-10-13"},
+        "organizer": {"email": "alex@example.com", "self": true},
+        "eventType": "birthday", "transparency": "transparent"
+      },
+      {
+        "id": "wl1", "status": "confirmed", "iCalUID": "wl1@google.com",
+        "summary": "Office",
+        "start": {"dateTime": "2026-10-12T09:00:00+03:00"},
+        "end": {"dateTime": "2026-10-12T18:00:00+03:00"},
+        "organizer": {"email": "alex@example.com", "self": true},
+        "eventType": "workingLocation"
+      }
+    ],
+    "copy1@group.calendar.google.com": [
+      {
+        "id": "copyA", "etag": "\"4001\"", "status": "confirmed", "iCalUID": "AAAA-1111@yandex.ru",
+        "summary": "Project sync ",
+        "start": {"dateTime": "2026-10-12T14:00:00+03:00"},
+        "end": {"dateTime": "2026-10-12T14:45:00+03:00"},
+        "organizer": {"email": "alex@example.com", "self": true},
+        "description": "<p>Agenda:</p><ul><li>status</li><li>risks</li></ul><p>Link: <a href=\"https://us06web.zoom.us/j/123?pwd=a&amp;from=addon\">join the call</a>.</p>",
+        "eventType": "default"
+      },
+      {
+        "id": "trip", "status": "confirmed", "iCalUID": "trip@google.com",
+        "summary": "Business trip",
+        "start": {"date": "2026-10-12"}, "end": {"date": "2026-10-15"},
+        "organizer": {"email": "alex@example.com", "self": true},
+        "eventType": "default", "transparency": "transparent"
+      },
+      {
+        "id": "parallel1", "status": "confirmed", "iCalUID": "parallel1@google.com",
+        "summary": "Parallel call",
+        "start": {"dateTime": "2026-10-12T11:30:00+03:00"},
+        "end": {"dateTime": "2026-10-12T12:15:00+03:00"},
+        "organizer": {"email": "alex@example.com", "self": true},
+        "description": "Подключайтесь: https://team.ktalk.ru/xyz.",
+        "eventType": "default"
+      }
+    ],
+    "copy2@group.calendar.google.com": [
+      {
+        "id": "copyB", "status": "confirmed", "iCalUID": "BBBB-2222@mail",
+        "summary": "project sync",
+        "start": {"dateTime": "2026-10-12T14:00:00+03:00"},
+        "end": {"dateTime": "2026-10-12T14:45:00+03:00"},
+        "organizer": {"email": "alex@example.com", "self": true},
+        "description": "Materials: https://docs.google.com/document/d/xyz",
+        "eventType": "default"
+      },
+      {
+        "id": "tomorrow1", "status": "confirmed", "iCalUID": "tomorrow1@mail",
+        "summary": "Standup",
+        "start": {"dateTime": "2026-10-13T10:00:00+03:00"},
+        "end": {"dateTime": "2026-10-13T10:15:00+03:00"},
+        "organizer": {"email": "alex@example.com", "self": true},
+        "location": "https://zoom.us/download",
+        "eventType": "default"
+      }
+    ]
+  }
+}

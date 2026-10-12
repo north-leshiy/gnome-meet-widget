@@ -1,0 +1,412 @@
+/* Top bar */
+.meet-panel-box {
+    spacing: 4px;
+}
+
+.meet-panel-label {
+    padding-right: 2px;
+}
+
+.panel-button.meet-highlight {
+    background-color: -st-accent-color;
+    color: -st-accent-fg-color;
+}
+
+.panel-button.meet-highlight:hover {
+    background-color: st-lighten(-st-accent-color, 6%);
+}
+
+/* Menu */
+.meet-menu {
+    width: 30em;
+}
+
+.meet-menu-item {
+    padding: 0;
+}
+
+.meet-menu-item:hover,
+.meet-menu-item:focus {
+    background-color: transparent;
+}
+
+.meet-agenda,
+.meet-card {
+    spacing: 8px;
+    padding: 2px 4px;
+}
+
+.meet-agenda-top {
+    spacing: 2px;
+    padding: 0 0 6px 6px;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.meet-agenda-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.meet-agenda-header {
+    spacing: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.meet-card-header {
+    spacing: 10px;
+    padding-bottom: 4px;
+}
+
+.meet-card-close {
+    padding: 7px;
+    border-radius: 999px;
+    background-color: rgba(127, 127, 127, 0.14);
+}
+
+.meet-card-close:hover,
+.meet-card-close:focus {
+    background-color: rgba(127, 127, 127, 0.26);
+}
+
+.meet-card-time {
+    color: rgba(127, 127, 127, 1);
+}
+
+.meet-card-logo {
+    padding-top: 4px;
+}
+
+.meet-agenda-title {
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+.meet-card-title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.meet-icon-button {
+    padding: 6px;
+    border-radius: 999px;
+}
+
+.meet-icon-button:hover,
+.meet-icon-button:focus {
+    background-color: rgba(127, 127, 127, 0.18);
+}
+
+.meet-icon-button:active {
+    background-color: rgba(127, 127, 127, 0.28);
+}
+
+.meet-allday {
+    spacing: 2px;
+}
+
+.meet-allday-button {
+    border-radius: 12px;
+    padding: 6px 12px;
+    background-color: rgba(127, 127, 127, 0.14);
+}
+
+.meet-allday-button:hover {
+    background-color: rgba(127, 127, 127, 0.3);
+}
+
+.meet-agenda-empty {
+    padding: 12px 8px;
+    color: rgba(127, 127, 127, 1);
+}
+
+/* Radii follow GNOME Shell 50: buttons and icon buttons are pills (999px),
+   highlighted list items 12px like .popup-menu-item. */
+
+/* Rows: the box carries hover and state colors, so the highlight covers
+   the marker and the Join button too */
+.meet-row {
+    spacing: 4px;
+    border-radius: 12px;
+    padding: 0 6px 0 8px;
+    margin: 1px 0;
+}
+
+.meet-row:hover {
+    background-color: rgba(127, 127, 127, 0.14);
+}
+
+.meet-row-button {
+    padding: 8px 4px;
+}
+
+.meet-row-button:focus {
+    border-radius: 12px;
+    background-color: rgba(127, 127, 127, 0.14);
+}
+
+.meet-row-content {
+    spacing: 12px;
+}
+
+.meet-row-current {
+    background-color: st-transparentize(-st-accent-color, 0.86);
+}
+
+.meet-row-current:hover {
+    background-color: st-transparentize(-st-accent-color, 0.78);
+}
+
+.meet-row-past .meet-row-time,
+.meet-row-past .meet-row-title,
+.meet-row-past .meet-row-sub {
+    color: rgba(127, 127, 127, 0.75);
+}
+
+.meet-row-time {
+    min-width: 3.2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-feature-settings: "tnum";
+}
+
+.meet-row-title {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.meet-row-sub {
+    spacing: 5px;
+    font-size: 0.9em;
+    color: rgba(127, 127, 127, 1);
+    padding-top: 1px;
+}
+
+.meet-row-sub-soon {
+    color: -st-accent-color;
+    font-weight: bold;
+}
+
+.meet-row-reply {
+    icon-size: 16px;
+    color: -st-accent-color;
+}
+
+.meet-row-marker {
+    width: 4px;
+    border-radius: 999px;
+    margin: 8px 0;
+}
+
+.meet-parallel-0 { background-color: #e66100; }
+.meet-parallel-1 { background-color: #9141ac; }
+.meet-parallel-2 { background-color: #26a269; }
+
+/* Free time between meetings */
+.meet-free {
+    background-color: rgba(46, 194, 126, 0.10);
+}
+
+.meet-free-current {
+    background-color: rgba(46, 194, 126, 0.20);
+}
+
+.meet-free-content {
+    padding: 6px 4px;
+}
+
+.meet-free-marker {
+    background-color: rgba(46, 194, 126, 0.7);
+    margin: 6px 0;
+}
+
+.meet-free .meet-row-time {
+    font-weight: normal;
+    color: rgba(127, 127, 127, 1);
+}
+
+.meet-free-label {
+    color: #1f8c5a;
+    font-weight: bold;
+}
+
+/* Agenda row call controls: logo, copy, round arrow */
+.meet-call {
+    spacing: 6px;
+}
+
+.meet-copy-button {
+    padding: 6px;
+    border-radius: 999px;
+    color: rgba(127, 127, 127, 1);
+}
+
+.meet-copy-button:hover,
+.meet-copy-button:focus {
+    background-color: rgba(127, 127, 127, 0.18);
+}
+
+.meet-join-round {
+    padding: 6px;
+    border-radius: 999px;
+    color: white;
+}
+
+.meet-join-round:hover,
+.meet-join-round:focus {
+    box-shadow: inset 0 0 0 20px rgba(255, 255, 255, 0.18);
+}
+
+/* Join buttons: primary uses the accent color, secondary is neutral */
+.meet-join-content {
+    spacing: 6px;
+}
+
+.meet-join {
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.meet-join-primary {
+    padding: 8px 18px 8px 14px;
+    background-color: -st-accent-color;
+    color: -st-accent-fg-color;
+}
+
+.meet-join-primary:hover,
+.meet-join-primary:focus {
+    background-color: st-lighten(-st-accent-color, 8%);
+}
+
+.meet-join-primary:active {
+    background-color: st-darken(-st-accent-color, 6%);
+}
+
+.meet-join-secondary {
+    padding: 8px 18px 8px 14px;
+}
+
+/* Footer */
+.meet-agenda-footer {
+    spacing: 4px;
+    padding-top: 6px;
+    border-top: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.meet-status-text,
+.meet-card-hint {
+    font-size: 0.85em;
+    color: rgba(127, 127, 127, 1);
+}
+
+.meet-footer-link {
+    border-radius: 999px;
+    padding: 4px 8px;
+}
+
+.meet-footer-link:hover,
+.meet-footer-link:focus {
+    background-color: rgba(127, 127, 127, 0.15);
+}
+
+.meet-error {
+    spacing: 8px;
+    padding: 8px;
+}
+
+/* Card */
+.meet-card-field {
+    spacing: 10px;
+    padding: 3px 0;
+}
+
+.meet-card-text {
+    font-size: 1.05em;
+}
+
+.meet-card-field-icon {
+    icon-size: 16px;
+}
+
+.meet-card-actions {
+    spacing: 8px;
+    padding: 4px 0 8px;
+}
+
+.meet-copy-text {
+    padding: 8px 12px;
+    border-radius: 999px;
+}
+
+.meet-card-calendar {
+    spacing: 6px;
+}
+
+.meet-calendar-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+}
+
+.meet-card-expander {
+    border-radius: 12px;
+}
+
+.meet-card-expander:hover,
+.meet-card-expander:focus {
+    background-color: rgba(127, 127, 127, 0.14);
+}
+
+.meet-card-attendees {
+    spacing: 2px;
+    padding-left: 26px;
+}
+
+.meet-card-more {
+    padding-left: 0;
+    color: -st-accent-color;
+}
+
+.meet-attendee {
+    spacing: 8px;
+}
+
+.meet-attendee-status {
+    min-width: 1em;
+    font-weight: bold;
+}
+
+.meet-response-accepted { color: #26a269; }
+.meet-response-declined { color: #e01b24; }
+.meet-response-tentative { color: #e5a50a; }
+
+.meet-card-description {
+    margin-top: 8px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(127, 127, 127, 0.2);
+}
+
+.meet-rsvp {
+    spacing: 6px;
+    padding: 6px 0;
+}
+
+.meet-rsvp-button {
+    padding: 4px 10px;
+}
+
+.meet-rsvp-button:checked {
+    background-color: -st-accent-color;
+    color: -st-accent-fg-color;
+}
+
+/* Top bar extras */
+.meet-panel-badge {
+    font-weight: bold;
+    padding-left: 2px;
+}
+
+.meet-tooltip-multiline {
+    border-radius: 12px;
+    text-align: left;
+}

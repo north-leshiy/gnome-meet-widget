@@ -1,0 +1,7 @@
+extension/schemas/gschemas.compiled
+extension/locale/
+*.shell-extension.zip
+.idea/
+tests/out/
+openspec/
+.claude/

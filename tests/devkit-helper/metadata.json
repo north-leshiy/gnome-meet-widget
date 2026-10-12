@@ -1,0 +1,7 @@
+{
+  "uuid": "devkit-helper@gnome-meet-widget.test",
+  "name": "gnome-meet-widget devkit helper",
+  "description": "Test-only: enables unsafe mode in the nested devkit Shell so tests can use Eval and Screenshot. Never install into a real session.",
+  "shell-version": ["50"],
+  "version": 1
+}

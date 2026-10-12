@@ -1,0 +1,11 @@
+{
+  "uuid": "gnome-meet-widget@north-leshiy.github.io",
+  "name": "Meet Widget",
+  "description": "Time to your next Google Calendar meeting in the top bar, the day's agenda, meeting reminders and one-click join for Google Meet, Zoom, Teams, Jitsi, Kontur Talk and Yandex Telemost.",
+  "shell-version": [
+    "50"
+  ],
+  "gettext-domain": "gnome-meet-widget",
+  "settings-schema": "org.gnome.shell.extensions.gnome-meet-widget",
+  "url": "https://github.com/north-leshiy/gnome-meet-widget"
+}
