@@ -1,7 +1,7 @@
 {
   "uuid": "gnome-meet-widget@north-leshiy.github.io",
   "name": "Meet Widget",
-  "description": "Time to your next Google Calendar meeting in the top bar, the day's agenda, meeting reminders and one-click join for Google Meet, Zoom, Teams, Jitsi, Kontur Talk and Yandex Telemost.\n\nThe copy link button puts the call link on the clipboard; the extension never reads the clipboard.",
+  "description": "Never be late for a call again. Meet Widget keeps your next Google Calendar meeting in the top bar and gets you into the call with one click.\n\n• Always know what's next: \"Design critique · in 5 min\", \"25 min left\" or \"Free 40 min\" right in the top bar. Choose smart, countdown or status mode. The button pulses when it's time to join.\n• Your whole day in one click: past meetings fade out, the current one is highlighted, free slots, overlaps and declined meetings are easy to spot, and pending invitations are marked.\n• One-click Join for Google Meet, Zoom, Microsoft Teams, Jitsi, Kontur Talk and Yandex Telemost. The call link is found in the conference data, the location or the description.\n• Meeting card: time, room, organizer, attendees with their replies, and the description with clickable links.\n• A reminder with a Join button a couple of minutes before the start.\n• Ctrl+Alt+J joins the current meeting from any app.\n\nNothing to sign in to: it uses the Google account from Settings → Online Accounts. Read-only, no passwords stored, keeps counting down offline.\n\nThe copy link button puts the call link on the clipboard; the extension never reads the clipboard.",
   "shell-version": [
     "50"
   ],
