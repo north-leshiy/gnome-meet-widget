@@ -35,7 +35,6 @@ export class Clock {
 
     destroy() {
         this._wallClock.disconnect(this._clockId);
-        this._wallClock.run_dispose();
         this._wallClock = null;
         Gio.DBus.system.signal_unsubscribe(this._sleepId);
         this._network.disconnect(this._networkId);

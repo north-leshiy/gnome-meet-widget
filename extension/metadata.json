@@ -1,7 +1,7 @@
 {
   "uuid": "gnome-meet-widget@north-leshiy.github.io",
   "name": "Meet Widget",
-  "description": "Time to your next Google Calendar meeting in the top bar, the day's agenda, meeting reminders and one-click join for Google Meet, Zoom, Teams, Jitsi, Kontur Talk and Yandex Telemost.",
+  "description": "Time to your next Google Calendar meeting in the top bar, the day's agenda, meeting reminders and one-click join for Google Meet, Zoom, Teams, Jitsi, Kontur Talk and Yandex Telemost.\n\nThe copy link button puts the call link on the clipboard; the extension never reads the clipboard.",
   "shell-version": [
     "50"
   ],
